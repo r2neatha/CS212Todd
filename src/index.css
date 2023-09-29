@@ -1,0 +1,14 @@
+@font-face{
+    font-family: myFont;
+    src:url(Norsebold.otf)
+}
+
+
+
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;}
+
+h2 {
+    font-family: myFont;}
