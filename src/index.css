@@ -7,8 +7,63 @@
 
 
 body {
-    background-color: whitesmoke;
+    background-color: rgb(75, 74, 74);
     font-family: 'Times New Roman', Times, serif;}
 
+h1 { 
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(168, 0, 70);
+    box-shadow: 5px 5px 5px 5px black;}
+
 h2 {
-    font-family: myFont;}
+    font-size: large;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(168, 0, 70);
+    color: whitesmoke;
+    box-shadow: 5px 5px 5px 5px black;}
+
+h3 {
+    font-size: large;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(168, 0, 70);
+    color: whitesmoke;
+    box-shadow: 5px 5px 5px 5px black;}
+
+h4 {
+    font-size: large;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(168, 0, 70);
+    color: whitesmoke;
+    box-shadow: 5px 5px 5px 5px black;}
+        
+
+p.one 
+    {
+    width: 300px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: rgb(168, 0, 70);
+    }
+p.two 
+    {
+    width: 300px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: rgb(168, 0, 70);
+    }
+
+p.three 
+    {
+    width: 300px;
+    box-shadow: 5px 5px 5px 5px black;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: rgb(168, 0, 70);
+    }
+
