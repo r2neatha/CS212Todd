@@ -2,42 +2,86 @@
 
 <html>
     <head>
-        <title> Lab 4: Pretiffy Your Essay by Ryan Todd </title>
-        <!--<style type="text/css">
-            body {
-                font-family: 'Times New Roman', Times, serif;}
-        </style> -->
+        <title> Lab 6: Do Something! </title>
         <link rel="stylesheet" type="text/css" href="index.css" />
+        <script>
+            function bubbleSort(arr) {
+            const length = arr.length;
+            let isSwapped;
+
+            do {
+                isSwapped = false;
+                for (let i = 0; i < length - 1; i++) 
+                {
+                    if (arr[i] > arr[i + 1])
+                    {
+                        // swap
+                        let temp = arr[i];
+                        arr[i] = arr[i + 1];
+                        arr[i + 1] = temp;
+                        isSwapped = true;
+                    }
+                }
+            } while (isSwapped);
+            return arr;
+        }
+        function performBubbleSort() {
+                let unsortedArray = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+                let sortedArray = bubbleSort([...unsortedArray]);
+
+                // Update main section content
+                document.querySelector('.main').innerHTML = `
+                    <h3>Unsorted Array: ${unsortedArray.join(', ')}</h3>
+                    <h3>Sorted Array: ${sortedArray.join(', ')}</h3>
+                `;
+            }
+        </script>
+</head>
+
     </head>
-        <body> 
-            <h1> Lab 4: Pretiffy Your Essay by Ryan Todd</h1>
+<body>
+    
+    <div class="wrapper">
 
-            <h2> Selecting a Font in HTML:</h2> 
+        <div class="header">
+            <h1>Bubble Sort Simulator</h1>
+        </div>
 
-            <p class="one"> I selected the font Times New Roman for my example, research for this action was relitivly simple.
-                Firstly, I consulted the book becasue I remeber this example in chaper 10. On page 235 there is 
-                and example using a external CSS style selector. I mimiced this into my own code with a different
-                font.</p>
+        <div class="nav">
+            <h1>Navigation:</h1> 
+            <h2>Tools</h2>
+            <h2>Downloads</h2>
+            <h2>Customer Support</h2>
+            <h2>More Content</h2>
+        </div>
 
-            <h3> Creating my Own Font:</h3>
+        <div class="main">
+            <button onclick="performBubbleSort()"> Perform Bubble Sort </button>
+        </div>
 
-            <p class="two"> Research for downloaidng my own custom font took a little more work compared to choosing a common 
-                font. The resource that proved most helpful was a Youtube video by MainlyWebStuff titled 
-                "Downloading fonts and using them in your design with CSS" I used this video along with my prior 
-                knowledge of CSS to download my nordic font.</p>
+        <div class="ad">
+            <a href="https://www.amazon.com/LOKO-Storage-Industrial-Adjustable-Footpads/dp/B0B2X3JHXW?th=1" 
+            target="_blank">
+                <img src="tabel.jpg" width="190" height="300"/>
+            </a>
+            <a href="https://www.amazon.com/Peaceful-Classics-Drawers-Furniture-Cabinets/dp/B098R95XKM?th=1" 
+            target="_blank">
+            <img src="tabel2.jpg" width="190" height="225px"/>
+            </a>
+            
+        </div>
 
-            <h4>Addendum:</h4>
+        <div class="footer">
+            <b>Admentum:</b>
+            <p>This project allowed for me to gain a solid understanding of JavaScript. Initially my research on the 
+                Holy Grail Format proved successful, this allowed me to move through the formatting of my project relatively easily.  
+                While successful in the formatting section I had to spend the majority of time debugging my code. I struggled to show
+                a button that the user could press to start the bubble sort. This led to an issue with implementing my javascript
+                I decided to implement my javascript internally instead of externally. Overall this project was beneficial and not too challenging.  </p>
+        </div>
+    </div>
 
-            <p class="three"> For the CSS style choices in my website I have specifically chosen fonts, colors and sizes, for all 
-                elements in the document. For the body text I have selected 'Times New Roman' as an option. To maintain a style I have 
-                mainly used dark pink shades like `rgb(168, 0 70)` for headings and paragraphs backgrounds. To ensure contrast 
-                and readability I have set the text color to 'whitesmoke.' Additionally elements like `h1` `h2` `h3` `p.one` 
-                and `p.two` are given a box shadow effect of ` 5px 5px 5px black` creating an overall uniform design in the document.
-                Another aleration I made was changing the font sizes of the headders to large It is essential to ensure that these design 
-                choices align with the documents purpose and theme while considering accessibility and readability due, to the use of 
-                background colors and text.
+</body>
 
-                </p>
-        </body>
 
-</html>
+
