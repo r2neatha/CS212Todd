@@ -1,69 +1,66 @@
-@font-face{
-    font-family: myFont;
-    src:url(Norsebold.otf)
+.wrapper div {
+
+    margin: 5px;
+
+    background-color: lightgray;
+
+    text-align: center;
+
 }
 
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+                          "nav main ad"
+                          "footer footer footer";
+}
 
-
-
-body {
-    background-color: rgb(75, 74, 74);
-    font-family: 'Times New Roman', Times, serif;}
-
-h1 { 
-    width: fit-content;
+h1 {
+    font-size: xx-large;
+    width: center;
     padding: 10px;
-    background-color: rgb(168, 0, 70);
-    box-shadow: 5px 5px 5px 5px black;}
+}
 
 h2 {
     font-size: large;
-    width: fit-content;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    color: blue;
+    width: center;
     padding: 10px;
-    background-color: rgb(168, 0, 70);
-    color: whitesmoke;
-    box-shadow: 5px 5px 5px 5px black;}
+}
 
-h3 {
-    font-size: large;
-    width: fit-content;
-    padding: 10px;
-    background-color: rgb(168, 0, 70);
-    color: whitesmoke;
-    box-shadow: 5px 5px 5px 5px black;}
+img {
+    border: 5px solid black;
+}
 
-h4 {
-    font-size: large;
-    width: fit-content;
-    padding: 10px;
-    background-color: rgb(168, 0, 70);
-    color: whitesmoke;
-    box-shadow: 5px 5px 5px 5px black;}
-        
+.header {
+    diplay: grid;
+    grid-area: header;
+}
 
-p.one 
-    {
-    width: 300px;
-    box-shadow: 5px 5px 5px 5px black;
-    padding: 20px;
-    color: whitesmoke;
-    background-color: rgb(168, 0, 70);
-    }
-p.two 
-    {
-    width: 300px;
-    box-shadow: 5px 5px 5px 5px black;
-    padding: 20px;
-    color: whitesmoke;
-    background-color: rgb(168, 0, 70);
-    }
+.nav {
+    diplay: grid;
+    grid-area: nav;
+}
 
-p.three 
-    {
-    width: 300px;
-    box-shadow: 5px 5px 5px 5px black;
-    padding: 20px;
-    color: whitesmoke;
-    background-color: rgb(168, 0, 70);
-    }
+.main {
+    diplay: grid;
+    grid-area: main;
+}
+
+.ad {
+    diplay: grid;
+    grid-area: ad;
+}
+
+.footer {
+    diplay: grid;
+    grid-area: footer;
+}
+
 
