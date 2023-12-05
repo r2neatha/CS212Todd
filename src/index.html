@@ -1,87 +1,27 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title> Lab 6: Do Something! </title>
-        <link rel="stylesheet" type="text/css" href="index.css" />
-        <script>
-            function bubbleSort(arr) {
-            const length = arr.length;
-            let isSwapped;
-
-            do {
-                isSwapped = false;
-                for (let i = 0; i < length - 1; i++) 
-                {
-                    if (arr[i] > arr[i + 1])
-                    {
-                        // swap
-                        let temp = arr[i];
-                        arr[i] = arr[i + 1];
-                        arr[i + 1] = temp;
-                        isSwapped = true;
-                    }
-                }
-            } while (isSwapped);
-            return arr;
-        }
-        function performBubbleSort() {
-                let unsortedArray = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
-                let sortedArray = bubbleSort([...unsortedArray]);
-
-                // Update main section content
-                document.querySelector('.main').innerHTML = `
-                    <h3>Unsorted Array: ${unsortedArray.join(', ')}</h3>
-                    <h3>Sorted Array: ${sortedArray.join(', ')}</h3>
-                `;
-            }
-        </script>
+<head>
+    <title>Mid-Term Project - Ryan Todd</title>
+   <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
 </head>
 
-    </head>
 <body>
-    
-    <div class="wrapper">
 
-        <div class="header">
-            <h1>Bubble Sort Simulator</h1>
-        </div>
+<div class = "wrap">
+    <header>
+        <h1>Choose Your Adventure</h1>
+    </header>
 
-        <div class="nav">
-            <h1>Navigation:</h1> 
-            <h2>Tools</h2>
-            <h2>Downloads</h2>
-            <h2>Customer Support</h2>
-            <h2>More Content</h2>
-        </div>
+    <div id="story-text" class="main"></div>
 
-        <div class="main">
-            <button onclick="performBubbleSort()"> Perform Bubble Sort </button>
-        </div>
+    <div id="choices" class="main"></div>
 
-        <div class="ad">
-            <a href="https://www.amazon.com/LOKO-Storage-Industrial-Adjustable-Footpads/dp/B0B2X3JHXW?th=1" 
-            target="_blank">
-                <img src="tabel.jpg" width="190" height="300"/>
-            </a>
-            <a href="https://www.amazon.com/Peaceful-Classics-Drawers-Furniture-Cabinets/dp/B098R95XKM?th=1" 
-            target="_blank">
-            <img src="tabel2.jpg" width="190" height="225px"/>
-            </a>
-            
-        </div>
+    <div id="image-selection" class="main"></div>
 
-        <div class="footer">
-            <b>Admentum:</b>
-            <p>This project allowed for me to gain a solid understanding of JavaScript. Initially my research on the 
-                Holy Grail Format proved successful, this allowed me to move through the formatting of my project relatively easily.  
-                While successful in the formatting section I had to spend the majority of time debugging my code. I struggled to show
-                a button that the user could press to start the bubble sort. This led to an issue with implementing my javascript
-                I decided to implement my javascript internally instead of externally. Overall this project was beneficial and not too challenging.  </p>
-        </div>
-    </div>
+</div>
+
+<script src="index.js"></script>
+
 
 </body>
-
 
 
